@@ -9,23 +9,37 @@ It uses one DynamoDB table to simply store the timestamp of the last time it ran
 
 1. Setup webhook [here](https://my.slack.com/services/new/incoming-webhook)
 2. Setup Disqus App [here](https://disqus.com/api/applications/)
-3. Rename disslack-sample.env.yml to disslack.env.yml
-4. Edit disslack.env.yml and save the values from step 1 and 2
-5. Then:
+3. Then:
 
 ```bash
 git clone git@github.com:conoro/disslack.git
 cd disslack
+```
+
+4. Rename disslack-sample.env.yml to disslack.env.yml
+5. Edit disslack.env.yml and save the values from step 1 and 2
+6. Then:
+
+```bash
 npm install -g serverless
 npm install
 serverless deploy
 ```
 
+
 Notes: 
 1. You can also invoke it manually by accessing the GET URL returned by the successful serverless deploy
-2. You can check logs with: serverless logs -f check
-3. If you make minor changes to just the function code, you can do a quick re-deploy with: serverless deploy function -f check
+2. You can check logs with: 
 
+```bash
+serverless logs -f check
+```
+
+3. If you make minor changes to just the function code, you can do a quick re-deploy with: 
+
+```bash
+serverless deploy function -f check
+```
 
 
 LICENSE Apache-2.0
