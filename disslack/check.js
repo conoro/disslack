@@ -69,11 +69,12 @@ module.exports.check = (event, context, callback) => {
               var url = response[i].thread.link + "#comment-" + response[i].id;
 
               var message =
-                response[i].author.name +
-                " blog received <" +
+                "nearForm blog received <" +
                 url +
                 "|a new comment> " +
-                "on <" +
+                "from " +
+                response[i].author.name +
+                " on <" +
                 response[i].thread.link +
                 "|" +
                 response[i].thread.title +
