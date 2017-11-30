@@ -69,7 +69,8 @@ module.exports.check = (event, context, callback) => {
               var url = response[i].thread.link + "#comment-" + response[i].id;
 
               var message =
-                "nearForm blog received <" +
+                process.env.DISSLACK_DISQUS_FORUM +
+                " blog received <" +
                 url +
                 "|a new comment> " +
                 "from " +
