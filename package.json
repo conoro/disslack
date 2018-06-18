@@ -1,7 +1,6 @@
 {
   "name": "disslack",
-  "description":
-    "Serverless AWS Lambda function to post new Disqus comments to a Slack channel",
+  "description": "Serverless AWS Lambda function to post new Disqus comments to a Slack channel",
   "version": "1.0.0",
   "author": {
     "name": "Conor O'Neill",
@@ -12,7 +11,11 @@
     "type": "git",
     "url": "https://github.com/conoro/disslack.git"
   },
-  "keywords": ["disqus", "slack", "comment"],
+  "keywords": [
+    "disqus",
+    "slack",
+    "comment"
+  ],
   "licenses": [
     {
       "type": "Apache-2.0",
@@ -20,7 +23,7 @@
     }
   ],
   "dependencies": {
-    "@slack/client": "^3.14.1",
+    "@slack/client": "^4.0.0",
     "aws-sdk": "^2.149.0",
     "disqus": "^0.3.0",
     "serverless-dynamodb-local": "^0.2.26",
