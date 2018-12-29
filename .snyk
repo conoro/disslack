@@ -1,5 +1,5 @@
 # Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
-version: v1.13.1
+version: v1.13.3
 # ignores vulnerabilities until expiry date; change duration by modifying expiry date
 ignore:
   'npm:cryptiles:20180710':
@@ -40,3 +40,8 @@ patch:
   'npm:request:20160119':
     - disqus > request:
         patched: '2018-11-27T06:50:49.482Z'
+  'npm:mime:20170907':
+    - disqus > request > mime:
+        patched: '2018-12-29T04:37:17.838Z'
+    - disqus > request > form-data > mime:
+        patched: '2018-12-29T04:37:17.838Z'
