@@ -28,11 +28,12 @@
     "disqus": "^0.3.0",
     "serverless-dynamodb-local": "^0.2.26",
     "serverless-offline": "^3.16.0",
-    "snyk": "^1.110.2"
+    "snyk": "^1.161.1"
   },
   "scripts": {
     "snyk-protect": "snyk protect",
-    "prepare": "npm run snyk-protect"
+    "prepare": "npm run snyk-protect",
+    "prepublish": "npm run snyk-protect"
   },
   "snyk": true
 }
