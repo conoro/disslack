@@ -1,5 +1,5 @@
 # Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
-version: v1.13.5
+version: v1.14.1
 # ignores vulnerabilities until expiry date; change duration by modifying expiry date
 ignore:
   'npm:cryptiles:20180710':
@@ -45,3 +45,22 @@ patch:
         patched: '2019-10-04T22:29:43.527Z'
     - snyk > proxy-agent > pac-proxy-agent > https-proxy-agent:
         patched: '2019-10-04T22:29:43.527Z'
+  SNYK-JS-LODASH-567746:
+    - serverless-dynamodb-local > lodash:
+        patched: '2020-04-30T22:31:27.830Z'
+    - serverless-offline > @babel/register > lodash:
+        patched: '2020-04-30T22:31:27.830Z'
+    - serverless-offline > @babel/core > @babel/helper-module-transforms > lodash:
+        patched: '2020-04-30T22:31:27.830Z'
+    - serverless-dynamodb-local > dynamodb-localhost > mocha > yargs-unparser > lodash:
+        patched: '2020-04-30T22:31:27.830Z'
+    - serverless-offline > @babel/core > @babel/helpers > @babel/traverse > lodash:
+        patched: '2020-04-30T22:31:27.830Z'
+    - serverless-offline > @babel/core > @babel/helper-module-transforms > @babel/helper-replace-supers > @babel/traverse > lodash:
+        patched: '2020-04-30T22:31:27.830Z'
+    - serverless-offline > @babel/core > @babel/helper-module-transforms > @babel/helper-replace-supers > @babel/traverse > @babel/generator > lodash:
+        patched: '2020-04-30T22:31:27.830Z'
+    - serverless-offline > @babel/core > @babel/helper-module-transforms > @babel/helper-replace-supers > @babel/traverse > @babel/helper-split-export-declaration > @babel/types > lodash:
+        patched: '2020-04-30T22:31:27.830Z'
+    - serverless-offline > @babel/core > @babel/helper-module-transforms > @babel/helper-replace-supers > @babel/traverse > @babel/helper-function-name > @babel/template > @babel/types > lodash:
+        patched: '2020-04-30T22:31:27.830Z'
