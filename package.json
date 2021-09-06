@@ -23,7 +23,7 @@
     }
   ],
   "dependencies": {
-    "@slack/client": "^4.0.0",
+    "@slack/client": "^5.0.0",
     "aws-sdk": "^2.178.0",
     "disqus": "^0.3.0",
     "serverless-dynamodb-local": "^0.2.26",
