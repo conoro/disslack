@@ -26,13 +26,15 @@
     "@slack/client": "^5.0.0",
     "aws-sdk": "^2.178.0",
     "disqus": "^0.3.0",
-    "serverless-dynamodb-local": "^0.2.26",
-    "serverless-offline": "^3.16.0",
     "snyk": "^1.319.2"
   },
   "scripts": {
     "snyk-protect": "snyk protect",
     "prepare": "npm run snyk-protect"
   },
-  "snyk": true
+  "snyk": true,
+  "devDependencies": {
+    "serverless-dynamodb-local": "^0.2.40",
+    "serverless-offline": "^9.2.0"
+  }
 }
